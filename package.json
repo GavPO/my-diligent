@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "cd server && node index.js --ignore client",
+    "start": "concurrently \"cd server && npm run start\" \"cd client && npm start\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -17,6 +17,7 @@
     "express": "^4.18.2",
     "mongoose": "^7.0.1",
     "nodemon": "^2.0.21",
-    "socket.io": "^4.6.1"
+    "socket.io": "^4.6.1",
+    "concurrently": "^7.5.0"
   }
 }
