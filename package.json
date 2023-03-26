@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "cd server && node index.js --ignore client",
+    "install": "cd server && npm i && cd ../client && npm i",
     "build": "cd client && npm i && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
