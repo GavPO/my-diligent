@@ -14,7 +14,7 @@ app.use("/api", userRoutes)
 app.use("/api/messages", messagesRoute)
 
 mongoose
-  .connect(process.env.MONGO_URL, {
+  .connect(process.env.MONGODB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
